@@ -21,6 +21,7 @@
     "autoprefixer": "^9.7.0",
     "postcss-import": "^12.0.1",
     "postcss-url": "^8.0.0",
+    "rollup-plugin-img": "^1.1.0",
     "rollup-plugin-json": "^4.0.0",
     "sirv-cli": "^0.4.4",
     "tailwindcss": "^1.1.3"

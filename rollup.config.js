@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import rollup_start_dev from './rollup_start_dev';
 import json from 'rollup-plugin-json';
+import image from 'rollup-plugin-img';
 
 
 const production = !process.env.ROLLUP_WATCH;
@@ -26,6 +27,10 @@ export default {
 			css: css => {
 				css.write('public/bundle.css');
 			}
+		}),
+
+		image({
+			limit: 10000
 		}),
 
 		json(),
