@@ -13,7 +13,12 @@
 <div class="flex flex-wrap">
   {#each attendees as attendee}
     <div
-      class={`rounded-lg shadow bg-white mr-2 mb-2 border-t-4 border-${colors[getRand(0, 4)]}-300`}>
+      class={`flex items-center rounded-lg shadow bg-white mr-2 mb-2 border-t-4 border-${colors[getRand(0, 4)]}-300`}>
+      <div
+        class={`flex items-center justify-center ml-2 h-10 w-10 rounded-full
+        bg-${colors[getRand(0, 4)]}-500`}>
+        <h4 class="text-white font-bold text-xl">{attendee.lastName[0]}</h4>
+      </div>
       <div class="py-2 px-4">
         <h3 class="mb-1 text-xl">{attendee.lastName}, {attendee.firstName}</h3>
         <div class="text-sm">{attendee.major}</div>
