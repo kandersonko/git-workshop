@@ -4,6 +4,11 @@
             "firstName": "Koffi Anderson",
             "lastName": "Koffi",
             "major": "Computer Science, Electrical Engineering"
-        }
+        },
+         {
+            "firstName": "John",
+            "lastName": "Doe",
+            "major": "Computer Science"
+        },
     ]
 }
